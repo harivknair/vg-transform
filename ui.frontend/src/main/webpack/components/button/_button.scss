@@ -1,0 +1,26 @@
+/* custom file */
+
+.cmp-button--primary {
+    .cmp-button {
+        @include cmp-button--primary;
+    }
+}
+
+.cmp-button--secondary {
+    .cmp-button {
+        @include cmp-button--secondary;
+        
+    }
+}
+
+.cmp-button--regular {
+    .cmp-button {
+        @include cmp-button;
+    }
+}
+
+.cmp-button--dropdown {
+    .cmp-button {
+        @include cmp-button--dropdown;
+    }
+}

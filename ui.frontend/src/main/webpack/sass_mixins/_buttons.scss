@@ -1,0 +1,40 @@
+/* Button custom */
+
+@mixin cmp-button {
+  @include subtitle3;
+  font-weight: map-get($primary, font-weight);
+  letter-spacing: map-get($primary, letter-spacing);
+  text-align: map-get($primary, text-align);
+  min-width: map-get($primary, min-width);
+  padding: map-get($primary, padding);  
+}
+
+@mixin cmp-button--primary {
+  @include cmp-button;
+  background: rgb(4, 5, 5);
+  color: rgb(255, 255, 255);
+  border-radius: 16px;
+}
+
+@mixin cmp-button--secondary {
+  @include cmp-button;
+  background: rgb(255, 255, 255);
+  color: rgb(4, 5, 5);
+  border-radius: 16px;
+  border: 2px solid rgb(4, 5, 5);
+  text-transform: uppercase;
+  background: url('/content/dam/vgpoc/chevron.png') no-repeat;
+  background-color: #fff;
+  background-size: 20px 12px;
+  background-position-x: 120px;
+  background-position-y: 15px;
+}
+
+@mixin cmp-button--dropdown {
+  @include cmp-button;
+  background: url('/content/dam/vgpoc/icons8-drop-down-50.png') no-repeat;
+  background-size: 30px 30px;
+  background-position-x: 115px;
+  background-position-y: 6px;
+  border-radius: 16px;
+}

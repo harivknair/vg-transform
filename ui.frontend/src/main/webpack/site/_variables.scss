@@ -1,0 +1,33 @@
+
+//== Font
+
+$font-family:           "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-size:             16px;
+$font-height:           1.5;
+
+//== Color
+
+// Normal mode
+$color-foreground:      #202020;
+$color-background:      #ECECEC;
+$color-link:            #2020E0;
+
+// Dark mode
+$color-foreground-dark: invert($color-foreground);
+$color-background-dark: invert($color-background);
+$color-link-dark:       invert($color-link);
+
+//typography
+$h1: get("typography.h1");
+$h2: get("typography.h2");
+$h3: get("typography.h3");
+$h4: get("typography.h4");
+$h5: get("typography.h6");
+$h6: get("typography.h6");
+$subtitle1: get("typography.subtitle1");
+$subtitle2: get("typography.subtitle2");
+$subtitle3: get("typography.subtitle3");
+$subtitle4: get("typography.subtitle4");
+
+//buttons
+$primary: get("button.primary-button");

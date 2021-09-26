@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/apps/vgpoc/clientlibs"/>
+    <filter root="/apps/vgpoc/components"/>
+    <filter root="/apps/vgpoc/i18n"/>
+</workspaceFilter>

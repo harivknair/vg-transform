@@ -1,0 +1,49 @@
+/* custom file */
+
+.heading1 {
+  .cmp-title__text {
+    @include h1;
+  }
+}
+
+.heading2 {
+  .cmp-title__text {
+    @include h2;
+  }
+}
+
+.heading3 {
+  .cmp-title__text {
+    @include h3;
+  }
+}
+
+.heading4 {
+  .cmp-title__text {
+    @include h4;
+  }
+}
+
+.heading5 {
+  .cmp-title__text {
+    @include h5;
+  }
+}
+
+.heading6 {
+  .cmp-title__text {
+    @include h6;
+  }
+}
+
+.subtitle1 {
+  .cmp-title__text {
+    @include subtitle1;
+  }
+}
+
+.subtitle2 {
+  .cmp-title__text {
+    @include subtitle2;
+  }
+}

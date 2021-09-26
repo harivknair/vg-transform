@@ -1,0 +1,114 @@
+@mixin h1 {
+  font-family: map-get($h1, font-family);
+  font-size: map-get($h1, font-size);
+  font-weight: map-get($h1, font-weight);
+  line-height: map-get($h1, line-height);
+}
+
+@mixin h2 {
+  font-family: map-get($h2, font-family);
+  font-size: map-get($h2, font-size);
+  font-weight: map-get($h2, font-weight);
+  line-height: map-get($h2, line-height);
+}
+
+@mixin h3 {
+  font-family: map-get($h3, font-family);
+  font-size: map-get($h3, font-size);
+  font-weight: map-get($h3, font-weight);
+  line-height: map-get($h3, line-height);
+}
+
+@mixin h4 {
+  font-family: map-get($h4, font-family);
+  font-size: map-get($h4, font-size);
+  font-weight: map-get($h4, font-weight);
+  line-height: map-get($h4, line-height);
+}
+
+@mixin h5 {
+  font-family: map-get($h5, font-family);
+  font-size: map-get($h5, font-size);
+  font-weight: map-get($h5, font-weight);
+  line-height: map-get($h5, line-height);
+}
+
+@mixin h6 {
+  font-family: map-get($h6, font-family);
+  font-size: map-get($h6, font-size);
+  font-weight: map-get($h6, font-weight);
+  line-height: map-get($h6, line-height);
+}
+
+@mixin subtitle1 {
+  font-family: map-get($subtitle1, font-family);
+  font-size: map-get($subtitle1, font-size);
+  line-height: map-get($subtitle1, line-height);
+}
+
+@mixin subtitle2 {
+  font-family: map-get($subtitle2, font-family);
+  font-size: map-get($subtitle2, font-size);
+  line-height: map-get($subtitle2, line-height);
+}
+
+@mixin subtitle3 {
+  font-family: map-get($subtitle3, font-family);
+  font-size: map-get($subtitle3, font-size);
+  line-height: map-get($subtitle3, line-height);
+}
+
+@mixin subtitle4 {
+  font-family: map-get($subtitle4, font-family);
+  font-size: map-get($subtitle4, font-size);
+  line-height: map-get($subtitle4, line-height);
+}
+
+@font-face {
+  font-family: Mark Pro;
+  font-style: normal;
+  font-weight: 400;
+  src: url("../resources/fonts/MARKPRO.otf") format("opentype"),url("../resources/fonts/MarkPro.woff2") format("woff2"),url("../resources/fonts/MarkPro.woff") format("woff"),url("../resources/fonts/MarkPro.ttf") format("truetype"),url("../resources/fonts/MarkPro.eot?#iefix") format("embedded-opentype")
+}
+@font-face {
+  font-family: Mark Pro Black;
+  font-style: normal;
+  font-weight: 400;
+  src: url("../resources/fonts/MARKPROBLACK.otf") format("opentype")
+}
+@font-face {
+  font-family: Mark Pro Bold;
+  font-style: normal;
+  font-weight: 700;
+  src: url("../resources/fonts/MARKPROBOLD.otf") format("opentype"),url("../resources/fonts/Mark Pro Bold.woff2") format("woff2"),url("../resources/fonts/Mark Pro Bold.woff") format("woff"),url("../resources/fonts/Mark Pro Bold.ttf") format("truetype"),url("../resources/fonts/Mark Pro Bold.eot?#iefix") format("embedded-opentype")
+}
+@font-face {
+  font-family: Mark Pro Heavy;
+  font-style: normal;
+  font-weight: 700;
+  src: url("../resources/fonts/MARKPROHEAVY.otf") format("opentype"),url("../resources/fonts/Mark Pro Heavy.woff2") format("woff2"),url("../resources/fonts/Mark Pro Heavy.woff") format("woff"),url("../resources/fonts/Mark Pro Heavy.ttf") format("truetype"),url("../resources/fonts/Mark Pro Heavy.eot?#iefix") format("embedded-opentype")
+}
+@font-face {
+  font-family: Mark Pro Book;
+  font-style: normal;
+  font-weight: 700;
+  src: url("../resources/fonts/MARKPROBOOK.otf") format("opentype")
+}
+@font-face {
+  font-family: Mark Pro Extralight;
+  font-style: normal;
+  font-weight: 400;
+  src: url("../resources/fonts/MARKPROEXTRALIGHT.otf") format("opentype")
+}
+@font-face {
+  font-family: Mark Pro Light;
+  font-style: normal;
+  font-weight: 400;
+  src: url("../resources/fonts/MARKPROLIGHT.otf") format("opentype")
+}
+@font-face {
+  font-family: Mark Pro Medium;
+  font-style: normal;
+  font-weight: 400;
+  src: url("../resources/fonts/MARKPROMEDIUM.otf") format("opentype")
+}
