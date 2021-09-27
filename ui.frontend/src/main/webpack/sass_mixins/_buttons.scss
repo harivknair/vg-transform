@@ -2,11 +2,11 @@
 
 @mixin cmp-button {
   @include subtitle3;
-  font-weight: map-get($primary, font-weight);
-  letter-spacing: map-get($primary, letter-spacing);
-  text-align: map-get($primary, text-align);
-  min-width: map-get($primary, min-width);
-  padding: map-get($primary, padding);  
+  font-weight: bold;
+  letter-spacing: 0px;
+  text-align: center;
+  min-width: 10rem;
+  padding: 12px;
 }
 
 @mixin cmp-button--primary {

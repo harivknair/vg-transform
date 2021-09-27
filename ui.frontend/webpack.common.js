@@ -6,9 +6,6 @@ const MiniCssExtractPlugin    = require('mini-css-extract-plugin');
 const TSConfigPathsPlugin     = require('tsconfig-paths-webpack-plugin');
 const CopyWebpackPlugin       = require('copy-webpack-plugin');
 const { CleanWebpackPlugin }  = require('clean-webpack-plugin');
-const sass                    = require('node-sass');
-const sassUtils               = require('node-sass-utils')(sass);
-const sassVars                = require('./src/main/webpack/ui_theme/ui_theme');
 
 const SOURCE_ROOT = __dirname + '/src/main/webpack';
 
@@ -81,19 +78,7 @@ module.exports = {
                     {
                         loader: 'sass-loader',
                         options: {
-                            url: false,
-                            functions: {
-                                "get($keys)": function(keys) {
-                                  keys = keys.getValue().split(".");
-                                  let result = sassVars;
-                                  let i;
-                                  for (i = 0; i < keys.length; i++) {
-                                    result = result[keys[i]];
-                                  }
-                                  result = sassUtils.castToSass(result);
-                                  return result;
-                                }
-                              }
+                            url: false
                         }
                     },
                     {
