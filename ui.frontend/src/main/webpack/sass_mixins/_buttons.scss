@@ -2,29 +2,29 @@
 
 @mixin cmp-button {
   @include subtitle3;
-  font-weight: map-get($primary, font-weight);
-  letter-spacing: map-get($primary, letter-spacing);
-  text-align: map-get($primary, text-align);
-  min-width: map-get($primary, min-width);
-  padding: map-get($primary, padding);  
+  font-weight: map-get($button, font-weight);
+  letter-spacing: map-get($button, letter-spacing);
+  text-align: map-get($button, text-align);
+  min-width: map-get($button, min-width);
+  padding: map-get($button, padding);  
 }
 
 @mixin cmp-button--primary {
   @include cmp-button;
   background: rgb(4, 5, 5);
-  color: rgb(255, 255, 255);
-  border-radius: 16px;
+  color: map-get($secondary-color, dark);
+  border-radius: 17px;
 }
 
 @mixin cmp-button--secondary {
   @include cmp-button;
-  background: rgb(255, 255, 255);
+  background: map-get($secondary-color, dark);
   color: rgb(4, 5, 5);
   border-radius: 16px;
   border: 2px solid rgb(4, 5, 5);
   text-transform: uppercase;
   background: url('/content/dam/vgpoc/chevron.png') no-repeat;
-  background-color: #fff;
+  background-color: map-get($secondary-color, dark);
   background-size: 20px 12px;
   background-position-x: 120px;
   background-position-y: 15px;

@@ -15,7 +15,7 @@
     }
     &__description {
       @include subtitle2;
-      color: #000;
+      color: map-get($primary-color, dark);
       max-width: 50%;
     }
     &__action-link {
@@ -24,7 +24,7 @@
     }
     &__title-link {
       text-decoration: none;
-      color: #000;
+      color: map-get($primary-color, dark);
     }
   }
   

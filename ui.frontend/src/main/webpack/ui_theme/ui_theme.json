@@ -55,15 +55,21 @@
 		  "font-family": "Mark Pro;",
 		  "font-size": "11px;",
 		  "line-height": "16px;"
-		}
+		},
+		"button": {
+		  "font-weight": "bold;",
+		  "letter-spacing": "0px;",
+		  "text-align": "center;",
+		  "min-width": "10rem;",
+		  "padding": "10px 20px;"
+		}		
 	},
-	"button": {
-		"primary-button": {
-			"font-weight": "bold;",
-			"letter-spacing": "0px;",
-			"text-align": "center;",
-			"min-width": "10rem;",
-			"padding": "12px;"
+	"colors": {
+		"primary": {
+		  "dark":"#000"
+		},
+		"secondary": {
+		  "dark":"#fff"
 		}
-	}
+	}	
 }

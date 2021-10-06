@@ -10,7 +10,7 @@
     &__content {
       position: absolute;
       right: 0;
-      background: rgb(255, 255, 255);
+      background: map-get($secondary-color, dark);
       padding: 40px 25px 60px 25px;
       background-image: linear-gradient(#f6001e, #c20029);
       box-sizing: border-box;
@@ -22,18 +22,18 @@
 
     &__description {
       @include subtitle2;
-      color: #fff;
+      color: map-get($secondary-color, dark);
     }
 
     &__action-link {
       @include subtitle3;
       font-weight: bold;
-      color: #fff;
+      color: map-get($secondary-color, dark);
     }
 
     &__title-link {
       text-decoration: none;
-      color: #fff;
+      color: map-get($secondary-color, dark);
     }
     
     &__image img {

@@ -30,4 +30,8 @@ $subtitle3: get("typography.subtitle3");
 $subtitle4: get("typography.subtitle4");
 
 //buttons
-$primary: get("button.primary-button");
+$button: get("typography.button");
+
+//colors
+$primary-color: get("colors.primary");
+$secondary-color: get("colors.secondary");
