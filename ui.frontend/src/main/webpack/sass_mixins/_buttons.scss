@@ -11,30 +11,18 @@
 
 @mixin cmp-button--primary {
   @include cmp-button;
-  background: rgb(4, 5, 5);
+  background: map-get($primary-color, dark);
   color: map-get($secondary-color, dark);
+  border: 2px solid map-get($primary-color, dark);
   border-radius: 17px;
 }
 
 @mixin cmp-button--secondary {
   @include cmp-button;
   background: map-get($secondary-color, dark);
-  color: rgb(4, 5, 5);
-  border-radius: 16px;
-  border: 2px solid rgb(4, 5, 5);
-  text-transform: uppercase;
-  background: url('/content/dam/vgpoc/chevron.png') no-repeat;
+  color: map-get($primary-color, dark);
+  border-radius: 17px;
   background-color: map-get($secondary-color, dark);
-  background-size: 20px 12px;
-  background-position-x: 120px;
-  background-position-y: 15px;
-}
-
-@mixin cmp-button--dropdown {
-  @include cmp-button;
-  background: url('/content/dam/vgpoc/icons8-drop-down-50.png') no-repeat;
-  background-size: 30px 30px;
-  background-position-x: 115px;
-  background-position-y: 6px;
-  border-radius: 16px;
+  border: 2px solid map-get($primary-color, dark);
+  text-decoration: none;
 }

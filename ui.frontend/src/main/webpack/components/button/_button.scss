@@ -12,15 +12,3 @@
         
     }
 }
-
-.cmp-button--regular {
-    .cmp-button {
-        @include cmp-button;
-    }
-}
-
-.cmp-button--dropdown {
-    .cmp-button {
-        @include cmp-button--dropdown;
-    }
-}
