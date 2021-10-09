@@ -1,0 +1,45 @@
+.equal-teaser {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  justify-content: space-evenly;
+
+  &__container-wrap {
+    display: flex;
+    width: 49%;
+    background-color: #fff;    
+    padding: 20px 0 40px 0;
+  }
+
+  &__container {
+    width: 80%;
+    margin: auto
+  }
+
+  &__title {
+    @include subtitle1;
+  }
+
+  &__description {
+    @include subtitle3;
+  }
+
+  &__action{
+    padding-top: 10px;
+  }
+
+  &__action-link {
+    text-decoration: none;
+    @include cmp-button--primary;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .equal-teaser {
+    &__container-wrap {
+      width: 100%;
+      margin-bottom: 5px;
+    }
+  }
+}

@@ -1,0 +1,132 @@
+.expert-card {
+  
+  &__title-image-wrap, &__desc-button-wrap {
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    margin: auto;
+  }
+
+  &__image-des-wrap {
+    display: block;
+    width: 80%;
+    margin: auto;
+  }
+
+  &__title-wrap {
+    display: flex;
+    width: 50%;
+    align-items: center;
+  }
+
+  &__button-wrap {
+    display: flex;
+    width: 40%;
+    align-items: center;
+  }
+
+  &__img-wrap-left {
+    float: left;
+    background-color: map-get($secondary-color, dark);
+  }
+
+  &__content-wrap-btn {
+    float: right;
+  }
+
+  &__title-wrap h1 {
+    margin: 0;
+    @include h3;
+  }
+
+  &__img-wrap, &__content-wrap {
+    width: 40%;
+  }
+
+  &__img-wrap img {
+    max-width: 100%;
+  }
+
+  &__img-wrap-left {
+    align-items: center;
+  }
+
+  &__content-wrap, &__img-wrap {
+    background-color: map-get($secondary-color, dark);
+  }
+
+  &__text-wrap, &__action-wrap, &__content-title {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  &__content-title, &__content-wrap-btn {
+    padding-bottom: 10px;
+  }
+
+  &__title-duration {
+    padding-top: 10px;
+  }
+
+  &__content-title h2, &__text-wrap h2 {
+    @include h6;
+  }
+
+  &__content-title h4, &__text-wrap h4 {
+    @include subtitle2;
+    margin: 0;
+  }
+
+  &__content-title p, &__text-wrap p {
+    @include subtitle3;
+    margin: 0;
+  }
+
+  &__action-link {
+    text-decoration: none;
+    @include cmp-button--primary;
+  }
+
+  &__action-link-btn {
+    @include cmp-button--secondary;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1366px) {
+    &__title-wrap, &__img-wrap, &__content-wrap, &__button-wrap {
+      width: 48%;
+    }
+
+    &__title-wrap h1 {
+      @include h3;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    &__title-wrap, &__img-wrap, &__content-wrap, &__button-wrap {
+      width: 100%;
+    }
+
+    &__image-des-wrap {
+      display: flex;
+    }
+
+    &__content-wrap-btn {
+     order: -1;
+    }
+
+    &__title-image-wrap , &__image-des-wrap, &__desc-button-wrap {
+      flex-direction: column;
+    }
+
+    &__title-wrap h1 {
+      @include h6;
+    }
+  }
+
+  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    &__img-wrap {
+      height: 100%;
+    }
+  }
+
+}
