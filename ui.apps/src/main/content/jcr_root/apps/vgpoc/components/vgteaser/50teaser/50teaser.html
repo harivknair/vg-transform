@@ -1,0 +1,18 @@
+<div data-sly-use.teaser="com.adobe.cq.wcm.core.components.models.Teaser"></div>
+<div class="side-by-side">
+    <div class="side-by-side__img-wrap">
+        <sly data-sly-test=${properties.fileReference}>
+            <img src="${properties.fileReference}" alt="teaser image">
+        </sly>
+    </div>
+    <div class="side-by-side__desc-wrap">
+        <div class="side-by-side__title-wrap">
+            <sly data-sly-test=${teaser.title}>
+                <h1 class="side-by-side__title">${teaser.title}</h1>
+            </sly>
+            <sly data-sly-list="${teaser.actions}">
+                <a class="side-by-side__action-link" href="${item.URL}" title="${item.title}">${item.title}</a>
+            </sly>
+        </div>
+    </div>
+</div>
