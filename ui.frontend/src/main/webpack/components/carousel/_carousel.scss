@@ -1,0 +1,141 @@
+.carousel {
+  width: 80%;
+  margin: auto;
+
+  &__content-wrap {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__left-wrap {
+    width: 45%;
+  }
+
+  &__right-wrap {
+    width: 45%;
+  }
+
+  &__left-wrap img {
+    max-width: 100%;
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  ul li {
+    margin-bottom: 20px;
+  }
+
+  &__thumbnail-container {
+    display: flex;
+    position: relative;
+  }
+
+  &__thumbnail-img-wrap {
+    width: 30%;
+    background-color: map-get($secondary-color, dark);
+  }
+
+  &__thumbnail-img-wrap img {
+    min-height: 130px;
+    display: block;
+  }
+
+  &__thumbnail-content-wrap {
+    width: 70%;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding-right: 5%;
+    top: 10%;
+    background-color: map-get($secondary-color, dark);
+    padding-bottom: 20px;
+  }
+
+  &__thumbnail-content-wrap a {
+    color: map-get($primary-color, dark);
+  }
+
+  &__thumbnail-container img {
+    max-width: 100%;
+  }
+
+  &__content-title {
+    @include h5;
+  }
+
+  &__content-short-desc {
+    @include subtitle3;
+    float: left;
+    margin-bottom: 0;
+    padding-left: 5px;
+  }
+
+  &__content-long-desc {
+    display: inline-block
+  }
+
+  &__content-date {
+    @include subtitle3;
+    float: left;    
+    margin-bottom: 0;
+  }
+
+  &__action-link {
+    @include cmp-button--primary;
+    text-decoration: none;
+  }
+
+  &__thumbnail-content-title {
+    @include subtitle2;
+    padding-left: 10px;
+    color: map-get($primary-color, dark);
+  }
+
+  &__thumbnail-content-date {
+    @include subtitle4;
+    padding-left: 10px;
+    float: left;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1366px) {
+
+      &__left-wrap {
+        width: 48%;
+      }
+    
+      &__right-wrap {
+        width: 48%;
+      }
+
+      &__thumbnail-content-date {
+        float: none;
+        margin: 0;
+      }    
+  }
+
+  @media screen and (max-width: 768px) {
+
+    &__content-wrap {
+      flex-direction: column;
+    }
+
+    &__left-wrap {
+      width: 100%;
+    }
+  
+    &__right-wrap {
+      width: 100%;
+    }
+  }
+
+  @media screen and (max-width: 768px) and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+
+    &__content-wrap {
+      display: block;
+    }
+  }
+}
